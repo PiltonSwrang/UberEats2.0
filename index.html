@@ -1,0 +1,1029 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Uber Eats</title>
+    <link rel="icon" href="logo.png" type="image/gif" sizes="32x32">
+</head>
+
+<body>
+    <div class="container-fluid bar hidden sidebar">
+        <div class="row">
+            <div class="col-10 col-lg-3 bg-white wrapper d-flex flex-column justify-content-between ">
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div> <button class="btn btn-lg btn-dark w-75 d-inline-block">Sign in</button> <a> <i
+                                        class="fas fa-2x fa-times float-end close"></i> </a></div> <a href=""
+                                class="nav-link">Create your business account</a> <a href="" class="nav-link">Add your
+                                restaurant</a> <a href="" class="nav-link">Sign up to deliver</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="d-flex flex-row"> <img style="height: 40px; margin: 0px 8px 0 0;"
+                            class="d-inline-block "
+                            src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/0c6de4f0b3884eb89b28a29ecbc10d59.svg"
+                            alt="">
+                        <p class="d-inline-block w-75">There's more to love in the app.</p>
+                    </div>
+                    <div class="mt-3"> <button class="btn rounded-pill"
+                            style="margin-right:20px;background-color: #EEEEEE;"><i class="fab fa-apple"></i>
+                            iPhone</button> <button class="btn rounded-pill" style="background-color: #EEEEEE;"><i
+                                class="fa fa-android" aria-hidden="true"></i> Android</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home" style="padding: 0 5%; margin-bottom: 30px;">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: transparent; padding: 10px 5%;">
+            <div class="container-fluid"> <a class="hamburger navbar-brand"
+                    style="color: black; font-size: 30px; font-weight: 700;"> <i class="fas fa-bars fw-bold me-3 "></i>
+                    Uber <span class="fw-bold" style="color: #52B268;">Eats</span> </a> <button
+                    class="btn bg-white rounded-pill p-2">Sign in</button></div>
+        </nav>
+        <div class="container-fluid homeText">
+            <div class="row">
+                <div class="col">
+                    <h2 class="fw-bold bg-dark" style="color:#EEEEEE">Hungry ? <span>You're in the right place</span>
+                    </h2>
+                    <form class="d-none d-md-block">
+                        <div class="row" style="padding-left: 0;">
+                            <div class="col"> <input type="text" class="form-control"
+                                    placeholder="Enter Delivery Address"></div>
+                            <div class="col w-50" style="padding-left: 0;"> <select class="custom-select form-control">
+                                    <option selected>Deliver Now</option>
+                                    <option value="1">Schedule Later</option>
+                                </select></div>
+                            <div class="col" style="padding-left: 0;"> <button class="btn btn-dark p-1"
+                                    style="margin-left: 0; margin-top: 4px;">Find Food</button></div>
+                        </div>
+                    </form>
+                    <form class="d-sm-block d-md-none">
+                        <div class="row" style="padding-left: 0;">
+                            <div class="col-sm-12 mb-3"> <input type="text" class="form-control"
+                                    placeholder="Enter Delivery Address"></div>
+                            <div class="col-sm-12 mb-3"> <select class="custom-select form-control">
+                                    <option selected>Deliver Now</option>
+                                    <option value="1">Schedule Later</option>
+                                </select></div>
+                            <div class="col"> <button class="btn btn-dark p-2" style="margin-left: 0;">Find
+                                    Food</button></div>
+                        </div>
+                    </form>
+                    <div> <a href="" style="color: black;"
+                            class="bg-white text-decoration-underline d-inline-block">Sign In<p
+                                class="d-inline-block bg-white mb-0">&nbsp; for your recent addresses</p> </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foods headFood d-none d-md-block">
+        <div class="row">
+            <h2 class="fw-bold" style="margin-bottom: 30px;">Food near me</h2>
+            <div class="col"> <img
+                    src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NlYXJjaF9ob21lL0Zhc3RGb29kLmpwZw=="
+                    alt="">
+                <h4 class="">Fast Food</h4>
+            </div>
+            <div class="col"> <img
+                    src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS8wYmM5Y2ExOWEwMmUzYmQwM2YyMzk1YzhjZjhhM2UwYw=="
+                    alt="">
+                <h4 class="">Breakfast and Brunch</h4>
+            </div>
+            <div class="col"> <img
+                    src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS9hNWFhOWJiYmEwMTcyMTM0NDQ5YjRhZDQ4NjExZDkyYg=="
+                    alt="">
+                <h4 class="">American</h4>
+            </div>
+            <div class="col"> <img
+                    src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS83YjJhMzI5MDhjMDUwZTZiMDcyNTJmZmNiZTY1MWU4Yw=="
+                    alt="">
+                <h4 class="">Mexican</h4>
+            </div>
+            <div class="col"> <img
+                    src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS9hODRkYzY5Y2VlMzA3ZmJhNGY1NTliMWU4MjVkOGU5ZQ=="
+                    alt="">
+                <h4 class="">Chinese</h4>
+            </div>
+            <div class="col"> <img
+                    src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS83OGUzZDdmMDg2NmU1ZjE3YzgzNTAyMTY2NTNiMDYzYg=="
+                    alt="">
+                <h4 class="">Japanese</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foods sm-carousel d-sm-block d-md-none headFood" style="">
+        <h2 class="fw-bold" style="margin-bottom: 30px;">Food near me</h2>
+        <div class="row ">
+            <div class="d-flex flex-row" style="padding-left: 0;">
+                <div class="col-8"> <img
+                        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NlYXJjaF9ob21lL0Zhc3RGb29kLmpwZw=="
+                        alt="">
+                    <h4 class="">Fast Food</h4>
+                </div>
+                <div class="col-8"> <img
+                        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS8wYmM5Y2ExOWEwMmUzYmQwM2YyMzk1YzhjZjhhM2UwYw=="
+                        alt="">
+                    <h4 class="">Breakfast and Brunch</h4>
+                </div>
+                <div class="col-8"> <img
+                        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS9hNWFhOWJiYmEwMTcyMTM0NDQ5YjRhZDQ4NjExZDkyYg=="
+                        alt="">
+                    <h4 class="">American</h4>
+                </div>
+                <div class="col-8"> <img
+                        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS83YjJhMzI5MDhjMDUwZTZiMDcyNTJmZmNiZTY1MWU4Yw=="
+                        alt="">
+                    <h4 class="">Mexican</h4>
+                </div>
+                <div class="col-8"> <img
+                        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS83YjJhMzI5MDhjMDUwZTZiMDcyNTJmZmNiZTY1MWU4Yw=="
+                        alt="">
+                    <h4 class="">Mexican</h4>
+                </div>
+                <div class="col-8"> <img
+                        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS9hODRkYzY5Y2VlMzA3ZmJhNGY1NTliMWU4MjVkOGU5ZQ=="
+                        alt="">
+                    <h4 class="">Chinese</h4>
+                </div>
+                <div class="col"> <img
+                        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3NrdS83OGUzZDdmMDg2NmU1ZjE3YzgzNTAyMTY2NTNiMDYzYg=="
+                        alt="">
+                    <h4 class="">Japanese</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foods adv">
+        <div class="row d-none d-md-block">
+            <div class="col d-flex flex-row justify-content-center align-baseline align-items-center"> <img
+                    style="height: 75px; margin-right: 40px;"
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/0c6de4f0b3884eb89b28a29ecbc10d59.svg" alt="">
+                <h3 class="fs-bold" style="margin-right: 40px;">There's more to love in the app.</h3>
+                <div> <button class="btn rounded-pill" style="margin-right:20px;background-color: #EEEEEE;"><i
+                            class="fab fa-apple"></i> iPhone</button> <button class="btn rounded-pill"
+                        style="background-color: #EEEEEE;"><i class="fa fa-android" aria-hidden="true"></i>
+                        Android</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foods big-carousel ">
+        <div class="row d-none d-md-block">
+            <div class="col">
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+                    data-bs-interval="false">
+                    <div>
+                        <h2 class="d-inline-block fw-bold w-50">Order Food Delivery in San Francisco Bay Area</h2>
+                        <div class="d-inline-block w-50 float-end"> <a
+                                class="carousel-control-next text-success fw-bold float-end" type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next"> <i
+                                    class="fas fa-arrow-right"></i> </a> <a
+                                class="carousel-control-prev text-success fw-bold float-end" type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev"> <i
+                                    class="fas fa-arrow-left"></i> </a></div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row" style="margin-bottom: 0;">
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://d1ralsognjng37.cloudfront.net/c0bd3c1d-4135-45c6-81dd-99f086225d00.jpeg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Jack in the Box (4649 Geary Blvd)</h5>
+                                            <p>$0.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4"> <img class="w-100"
+                                        src="https://www.london-globe.com/wp-content/uploads/2020/10/cropped-mcdonalds-delivery-online.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">McDonalds &reg; (Daily City)</h5>
+                                            <p>$7.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-3"> <img class="w-100"
+                                        src="https://thesmartlocal.com/images/easyblog_articles/6007/b2ap3_large_image12.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">7-Eleven (221 Sansome St)</h5>
+                                            <p>$0.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://d1ralsognjng37.cloudfront.net/38a3014c-e5ab-4cd8-92bf-dd5708822673.jpeg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Cereal (90 Charter Oak Ave)</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-vegetables-for-sale-in-market-royalty-free-image-964185730-1544544635.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Fresh Vegtables (91 Corner Street)</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://zambianews365.b-cdn.net/wp-content/uploads/2020/01/Easy-chicken-chow-mein1.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Chicken Chowmein</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid foods sm-carousel d-sm-block d-md-none">
+            <h2 class="fw-bold" style="margin-bottom: 30px; margin-left: 0;">Order Food Delivery in San Francisco Bay
+                Area</h2>
+            <div class="row ">
+                <div class="d-flex flex-row" style="padding-left: 0;">
+                    <div class="col-10 "> <img class="w-100"
+                            src="https://d1ralsognjng37.cloudfront.net/c0bd3c1d-4135-45c6-81dd-99f086225d00.jpeg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Jack in the Box (4649 Geary Blvd)</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill" style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://www.london-globe.com/wp-content/uploads/2020/10/cropped-mcdonalds-delivery-online.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">McDonalds &reg; (Daily City)</h5>
+                                <p class="f-small">$7.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://thesmartlocal.com/images/easyblog_articles/6007/b2ap3_large_image12.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">7-Eleven (221 Sansome St)</h5>
+                                <p class="f-small">$0.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://zambianews365.b-cdn.net/wp-content/uploads/2020/01/Easy-chicken-chow-mein1.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Chicken Chowmein</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://d1ralsognjng37.cloudfront.net/38a3014c-e5ab-4cd8-92bf-dd5708822673.jpeg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Cereal, My Way! (90 Charter Oak Ave)</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-vegetables-for-sale-in-market-royalty-free-image-964185730-1544544635.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Fresh Vegtables (91 Corner Street)</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row promotion">
+            <div class="col-lg-4 col-md-4"> <img class="w-100"
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cef389b486cb4827e6ba007f26ebddab.svg" alt="">
+                <h5 class="fw-bold fs-4">Feed your employees</h5> <a href="" class="nav-link">Create a business
+                    account</a>
+            </div>
+            <div class="col-lg-4 col-md-4"> <img class="w-100"
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/7f56b34e6c253cb54a35bacf5150dde9.svg" alt="">
+                <h5 class="fw-bold fs-4">Your restaurant, delivered</h5> <a href="" class="nav-link">Add your
+                    restaurant</a>
+            </div>
+            <div class="col-lg-4 col-md-4"> <img class="w-100"
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/84d6770ca439c4b1ba2d6f53adc1d039.svg" alt="">
+                <h5 class="fw-bold fs-4">Deliver with Uber Eats</h5> <a href="" class="nav-link">Sign up to deliver</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foods big-carousel ">
+        <div class="row d-none d-md-block">
+            <div class="col">
+                <div id="carousel2" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                    <div>
+                        <h2 class="d-inline-block fw-bold w-50">New on Uber <span>Eats</span></h2>
+                        <div class="d-inline-block w-50 float-end"> <a
+                                class="carousel-control-next text-success fw-bold float-end" type="button"
+                                data-bs-target="#carousel2" data-bs-slide="next"> <i class="fas fa-arrow-right"></i>
+                            </a> <a class="carousel-control-prev text-success fw-bold float-end" type="button"
+                                data-bs-target="#carousel2" data-bs-slide="prev"> <i class="fas fa-arrow-left"></i> </a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://therecipecritic.com/wp-content/uploads/2018/01/worlds_best_steak_marinade-1-of-1-667x1000.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Juicy Steaks (1338 Polk Street)</h5>
+                                            <p>$0.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4"> <img class="w-100"
+                                        src="https://i.pinimg.com/564x/72/84/de/7284dea202a4b07708cdc1059e08abfd.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Crispy Fries</h5>
+                                            <p>$7.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-3"> <img class="w-100"
+                                        src="https://manjulaskitchen.com/wp-content/uploads/everyday-lunch-menu.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Indian Vegan Experiment</h5>
+                                            <p>$0.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://d1ralsognjng37.cloudfront.net/b3ef842f-20e5-44bf-8e2a-dadb4fc276b9.webp"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">United Kitchens of India</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://d1ralsognjng37.cloudfront.net/7c6e5fb3-5501-4f7c-ba48-eb7fb3917f24.jpeg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Burger Den</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://i.pinimg.com/originals/3d/79/4a/3d794ab668399547b2507110c9533729.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Round Pizza (801 Van Ness)</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid foods sm-carousel d-sm-block d-md-none">
+            <h2 class="fw-bold" style="margin-bottom: 30px;">New on Uber <span>Eats</span></h2>
+            <div class="row ">
+                <div class="d-flex flex-row" style="padding-left: 0;">
+                    <div class="col-10 "> <img class="w-100"
+                            src="https://therecipecritic.com/wp-content/uploads/2018/01/worlds_best_steak_marinade-1-of-1-667x1000.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Juicy Steaks (1338 Polk Street)</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill" style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://i.pinimg.com/564x/72/84/de/7284dea202a4b07708cdc1059e08abfd.jpg" alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Crispy Fries</h5>
+                                <p class="f-small">$7.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://manjulaskitchen.com/wp-content/uploads/everyday-lunch-menu.jpg" alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Indian Vegan Experiment</h5>
+                                <p class="f-small">$0.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://d1ralsognjng37.cloudfront.net/b3ef842f-20e5-44bf-8e2a-dadb4fc276b9.webp"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">United Kitchens of India</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://d1ralsognjng37.cloudfront.net/7c6e5fb3-5501-4f7c-ba48-eb7fb3917f24.jpeg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Burger Den</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://i.pinimg.com/originals/3d/79/4a/3d794ab668399547b2507110c9533729.jpg" alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Round Pizza (801 Van Ness)<< /h5>
+                                        <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foods maps">
+        <div>
+            <h2 class="fs-bold d-inline-block" style="margin-left: 12px;">Cities near me</h2>
+            <p class="fw-bold float-end d-inline"> <a href="" class="nav-link">View all 500+ cities</a></p>
+        </div>
+        <div class="google-map"> <iframe class="w-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212270.7411321579!2d-84.56068880457461!3d33.767633772689834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA%2C%20USA!5e0!3m2!1sen!2sin!4v1617373208482!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="row">
+            <div class="col" style="padding-left: 12px;"> <a href="" class="nav-link">Atlanta</a> <a href=""
+                    class="nav-link">Austin</a> <a href="" class="nav-link">Baltimore-Maryland</a> <a href=""
+                    class="nav-link">Boston</a> <a href="" class="nav-link">Charlotte</a> <a href=""
+                    class="nav-link">Chicago</a></div>
+            <div class="col"> <a href="" class="nav-link">New York City</a> <a href="" class="nav-link">Orange
+                    County</a> <a href="" class="nav-link">Palm Springs</a> <a href="" class="nav-link">Philadelphia</a>
+                <a href="" class="nav-link">Phoenix</a> <a href="" class="nav-link">Portland</a></div>
+            <div class="col"> <a href="" class="nav-link">Sacramento</a> <a href="" class="nav-link">Austin</a> <a
+                    href="" class="nav-link">Baltimore-Maryland</a> <a href="" class="nav-link">Boston</a> <a href=""
+                    class="nav-link">Charlotte</a> <a href="" class="nav-link">Washington D.C.</a></div>
+            <div class="col"> <a href="" class="nav-link">Dallas-Fort Worth</a> <a href="" class="nav-link">Denver</a>
+                <a href="" class="nav-link">Las Vegas</a> <a href="" class="nav-link">Los Angeles</a> <a href=""
+                    class="nav-link">Miami</a> <a href="" class="nav-link">Minneapolis - St. Paul</a></div>
+        </div>
+    </div>
+    <div class="container-fluid foods big-carousel ">
+        <div class="row d-none d-md-block">
+            <div class="col">
+                <div id="carousel3" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                    <div>
+                        <h2 class="d-inline-block fw-bold w-50">Fast Food Delivery in San Francisco Bay Area</h2>
+                        <div class="d-inline-block w-50 float-end"> <a
+                                class="carousel-control-next text-success fw-bold float-end" type="button"
+                                data-bs-target="#carousel3" data-bs-slide="next"> <i class="fas fa-arrow-right"></i>
+                            </a> <a class="carousel-control-prev text-success fw-bold float-end" type="button"
+                                data-bs-target="#carousel3" data-bs-slide="prev"> <i class="fas fa-arrow-left"></i> </a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2020-12/Wendy%27s.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Wendy's (176 Gateway Blvd)</h5>
+                                            <p>$0.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4"> <img class="w-100"
+                                        src="https://www.london-globe.com/wp-content/uploads/2020/10/cropped-mcdonalds-delivery-online.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">McDonalds &reg; (Daily City)</h5>
+                                            <p>$7.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-3"> <img class="w-100"
+                                        src="https://d1ralsognjng37.cloudfront.net/8fad5ddf-6dcf-4500-b80a-c57a7b55757f.jpeg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Carl's Jr (1 Hallidie Plaza)</h5>
+                                            <p>$0.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://imgmedia.lbb.in/media/2020/01/5e0edcc93dc45575e7c06959_1578032329558.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Great India Plate</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid foods sm-carousel d-sm-block d-md-none">
+            <h2 class="fw-bold" style="margin-bottom: 30px;">Fast Food Delivery in San Francisco Bay Area</h2>
+            <div class="row ">
+                <div class="d-flex flex-row" style="padding-left: 0;">
+                    <div class="col-10 "> <img class="w-100"
+                            src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2020-12/Wendy%27s.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Wendy's (176 Gateway Blvd)</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill" style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://www.london-globe.com/wp-content/uploads/2020/10/cropped-mcdonalds-delivery-online.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">McDonalds &reg; (Daily City)</h5>
+                                <p class="f-small">$7.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://d1ralsognjng37.cloudfront.net/8fad5ddf-6dcf-4500-b80a-c57a7b55757f.jpeg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Carl's Jr (1 Hallidie Plaza)</h5>
+                                <p class="f-small">$0.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://imgmedia.lbb.in/media/2020/01/5e0edcc93dc45575e7c06959_1578032329558.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Great India Plate</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foods big-carousel ">
+        <div class="row d-none d-md-block">
+            <div class="col">
+                <div id="carousel4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                    <div>
+                        <h2 class="d-inline-block fw-bold w-50">Breakfast and Brunch Delivery in San Francisco Bay Area
+                        </h2>
+                        <div class="d-inline-block w-50 float-end"> <a
+                                class="carousel-control-next text-success fw-bold float-end" type="button"
+                                data-bs-target="#carousel4" data-bs-slide="next"> <i class="fas fa-arrow-right"></i>
+                            </a> <a class="carousel-control-prev text-success fw-bold float-end" type="button"
+                                data-bs-target="#carousel4" data-bs-slide="prev"> <i class="fas fa-arrow-left"></i> </a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://media.timeout.com/images/105621194/image.jpg" alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Salty Crispy Fries with Sauce</h5>
+                                            <p>$0.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4"> <img class="w-100"
+                                        src="https://blogapi.uber.com/wp-content/uploads/2017/09/EatBurgerCo_Hero_Nativemedium16.9.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Burger Bundle</h5>
+                                            <p>$7.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-3"> <img class="w-100"
+                                        src="https://duyt4h9nfnj50.cloudfront.net/resized/d27932f8cb2c18e0c7c82aa4102b3d33-w2880-26.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Mr. Fox Special Feats</h5>
+                                            <p>$0.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://d1ralsognjng37.cloudfront.net/38a3014c-e5ab-4cd8-92bf-dd5708822673.jpeg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Cereal (90 Charter Oak Ave)</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://duyt4h9nfnj50.cloudfront.net/resized/3cd365ec28e4ab083f83f86ca140334e-w2880-5c.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Isomnia Cookies (132 Kearny Street)</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 bgc-1"> <img class="w-100"
+                                        src="https://cdn.cdnparenting.com/articles/2019/02/08102541/1049230460-H.jpg"
+                                        alt="">
+                                    <div>
+                                        <div class="d-inline-block w-75">
+                                            <h5 class="fs-bold">Ice Cream & Sweets (62 Seiar Plaza)</h5>
+                                            <p>$4.49 Delivery Fee • 40–50 min • $</p>
+                                        </div>
+                                        <div class="d-inline-block float-end">
+                                            <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;">
+                                                4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid foods sm-carousel d-sm-block d-md-none">
+            <h2 class="fw-bold" style="margin-bottom: 30px;">Breakfast and Brunch Delivery in San Francisco Bay Area
+            </h2>
+            <div class="row ">
+                <div class="d-flex flex-row" style="padding-left: 0;">
+                    <div class="col-10 "> <img class="w-100" src="https://media.timeout.com/images/105621194/image.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Jack in the Box (4649 Geary Blvd)</h5>
+                                <h5 class="fs-bold"></h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill" style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://blogapi.uber.com/wp-content/uploads/2017/09/EatBurgerCo_Hero_Nativemedium16.9.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Burger Bundle</h5>
+                                <p class="f-small">$7.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://duyt4h9nfnj50.cloudfront.net/resized/d27932f8cb2c18e0c7c82aa4102b3d33-w2880-26.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Mr. Fox Special Feats</h5>
+                                <p class="f-small">$0.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://duyt4h9nfnj50.cloudfront.net/resized/3cd365ec28e4ab083f83f86ca140334e-w2880-5c.jpg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Isomnia Cookies (132 Kearny Street)</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://d1ralsognjng37.cloudfront.net/38a3014c-e5ab-4cd8-92bf-dd5708822673.jpeg"
+                            alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Cereal, My Way! (90 Charter Oak Ave)</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10"> <img class="w-100"
+                            src="https://cdn.cdnparenting.com/articles/2019/02/08102541/1049230460-H.jpg" alt="">
+                        <div>
+                            <div class="d-inline-block w-85">
+                                <h5 class="fs-bold">Ice Cream & Sweets (62 Seiar Plaza)</h5>
+                                <p class="f-small">$4.49 Delivery Fee • 40–50 min • $</p>
+                            </div>
+                            <div class="d-inline-block float-end">
+                                <p class="rounded-pill " style=" background-color: #EEEEEE; padding: 5px;"> 4.5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foods maps">
+        <h2 class="d-inline-block fw-bold w-50" style="padding-left: 12px;">Countries with Uber <span>Eats</span></h2>
+        <div class="row">
+            <div class="col" style="padding-left: 12px;"> <a href="" class="nav-link">United States</a> <a href=""
+                    class="nav-link">Spain</a> <a href="" class="nav-link">Brazil</a> <a href=""
+                    class="nav-link">France</a> <a href="" class="nav-link">Mexico</a> <a href=""
+                    class="nav-link">Japan</a></div>
+            <div class="col"> <a href="" class="nav-link">Canada</a> <a href="" class="nav-link">Australia</a> <a
+                    href="" class="nav-link">Poland</a> <a href="" class="nav-link">Italy </a> <a href=""
+                    class="nav-link">Portugal</a> <a href="" class="nav-link">Switzerland</a></div>
+            <div class="col"> <a href="" class="nav-link">Ireland</a> <a href="" class="nav-link">Sri Lanka</a> <a
+                    href="" class="nav-link">Dominican Republic</a> <a href="" class="nav-link">Sweden</a> <a href=""
+                    class="nav-link">Guatemala</a> <a href="" class="nav-link">India</a></div>
+            <div class="col"> <a href="" class="nav-link">Chile</a> <a href="" class="nav-link">New Zealand</a> <a
+                    href="" class="nav-link">Taiwan (ROC)</a> <a href="" class="nav-link">South Africa</a> <a href=""
+                    class="nav-link">Belgium</a> <a href="" class="nav-link">Ecuador</a></div>
+        </div>
+    </div>
+    <div id="backdrop"></div>
+    <footer>
+        <div class="container-fluid foods">
+            <div class="row" style="border-bottom: 2px solid white; padding-bottom: 2%;">
+                <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-between">
+                    <div>
+                        <h2 class="fw-bold">Uber <span>Eats</span></h2>
+                    </div>
+                    <div class="d-none d-md-block"> <a href="" class=" nav-link d-inline-block align-self-bottom"> <img
+                                class=""
+                                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d0558d91063038236b60e3ef71fdc1fd.svg"
+                                alt=""> </a> <a href="" class="nav-link d-inline-block"> <img class=""
+                                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cf6dad406fdfdcd290fd40de9008ae50.png"
+                                alt=""> </a></div>
+                </div>
+                <div class="col-lg-3 col-md-3"> <a href="" class="nav-link fw-bold">About Uber Eats</a> <a href=""
+                        class="nav-link">Read our blog</a> <a href="" class="nav-link">Buy gift cards</a> <a href=""
+                        class="nav-link">Create a business account</a> <a href="" class="nav-link">Add your
+                        restaurant</a> <a href="" class="nav-link">Sign up to deliver</a></div>
+                <div class="col-lg-3 col-md-3"> <a href="" class="nav-link fw-bold">Get Help</a> <a href=""
+                        class="nav-link">View all cities</a> <a href="" class="nav-link">View all countries</a> <a
+                        href="" class="nav-link">Restaurant near me</a> <a href="" class="nav-link">Save on your first
+                        order</a> <a href="" class="nav-link">English</a>
+                    <div class="d-sm-block d-md-none"> <a href="" class="nav-link d-inline-block align-self-bottom">
+                            <img class=""
+                                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d0558d91063038236b60e3ef71fdc1fd.svg"
+                                alt=""> </a> <a href="" class="nav-link d-inline-block"> <img class=""
+                                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cf6dad406fdfdcd290fd40de9008ae50.png"
+                                alt=""> </a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 footer-center d-flex flex-row"> <a href="" class="nav-link"> <i
+                            class="fab fa-facebook-f "></i> </a> <a href="" class="nav-link"> <i
+                            class="fab fa-twitter"></i> </a> <a href="" class="nav-link"> <i
+                            class="fab fa-instagram"></i> </a></div>
+                <div class="col-lg-3 d-sm-none d-md-block"></div>
+                <div class="col-lg-3 d-inline-block footer-center"> <a href="" class="nav-link d-inline-block">Privacy
+                        Policy</a> <a href="" class="nav-link d-inline-block">Terms</a> <a href=""
+                        class="nav-link d-inline-block">Pricing</a></div>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-row justify-content-end">
+                    <div class="d-lg-block">
+                        <p class="d-lg-inline-block d-sm-block me-lg-5">This site is protected by reCAPTCHA and the
+                            Google Privacy Policy and Terms of Service apply.</p>
+                        <p class="d-lg-inline-block d-sm-block"> © 2021 Uber Technologies Inc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
